@@ -40,7 +40,26 @@ static const char *optional_props[] = {
 	// CXL component
 	"cxlComponentEventLog", "addressSpace", "errorType",
 	"participationType", "timedOut", "level", "operation", "preciseIP",
-	"restartableIP", "overflow", "uncorrected", "transactionType"
+	"restartableIP", "overflow", "uncorrected",
+	"transactionType",
+
+	// PCIe
+	"device_capabilities_2",
+	"device_capabilities_2_hex", "device_status_2", "device_status_2_hex",
+	"device_control_2", "device_control_2_hex", "link_capabilities_2",
+	"link_capabilities_2_hex", "link_status_2", "link_status_2_hex",
+	"link_control_2", "link_control_2_hex", "slot_capabilities_2",
+	"slot_capabilities_2_hex", "slot_status_2", "slot_status_2_hex",
+	"slot_control_2", "slot_control_2_hex", "tlp_header_4",
+	"tlp_header_4_hex", "tlp_header_5", "tlp_header_5_hex", "tlp_header_6",
+	"tlp_header_6_hex", "tlp_header_7", "tlp_header_7_hex", "tlp_header_8",
+	"tlp_header_8_hex", "tlp_header_9", "tlp_header_9_hex", "tlp_header_10",
+	"tlp_header_10_hex", "tlp_header_11", "tlp_header_11_hex",
+	"tlp_header_12", "tlp_header_12_hex", "tlp_header_13",
+	"tlp_header_13_hex", "tlp_prefix_log_0", "tlp_prefix_log_0_hex",
+	"tlp_prefix_log_1", "tlp_prefix_log_1_hex", "tlp_prefix_log_2",
+	"tlp_prefix_log_2_hex", "tlp_prefix_log_3", "tlp_prefix_log_3_hex"
+
 };
 
 //Returns a ready-for-use memory stream containing a CPER record with the given sections inside.
