@@ -19,7 +19,7 @@ jobs:
         with:
           repository: 'edtanous/libcper'
           ref: 'ci'
-          path: '${{ github.workspace }}/git'
+          path: 'git'
 
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.23.2
