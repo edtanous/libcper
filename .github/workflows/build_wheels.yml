@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: 'edtanous/libcper'
-          ref: 'main'
+          ref: 'ci'
 
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.23.2
