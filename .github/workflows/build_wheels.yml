@@ -1,4 +1,4 @@
-name: Build
+name: BuildWheel
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: 'edtanous/libcper'
-          ref: 'pipy'
+          ref: 'pypi'
           path: 'git'
 
       - name: Build wheels
