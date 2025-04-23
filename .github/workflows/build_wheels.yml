@@ -19,6 +19,7 @@ jobs:
         with:
           repository: 'edtanous/libcper'
           ref: 'ci'
+          path: 'libcper'
 
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.23.2
@@ -26,7 +27,7 @@ jobs:
         #   CIBW_SOME_OPTION: value
         #    ...
         with:
-          package-dir: 'libcper/libcper'
+          package-dir: '$GITHUB_WORKSPACE/libcper'
         #   output-dir: wheelhouse
         #   config-file: "{package}/pyproject.toml"
 
