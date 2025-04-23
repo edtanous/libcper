@@ -25,8 +25,8 @@ jobs:
         # env:
         #   CIBW_SOME_OPTION: value
         #    ...
-        # with:
-        #   package-dir: .
+        with:
+          package-dir: 'libcper'
         #   output-dir: wheelhouse
         #   config-file: "{package}/pyproject.toml"
 
